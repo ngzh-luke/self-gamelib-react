@@ -42,7 +42,13 @@ This project applied [`MIT`](https://en.wikipedia.org/wiki/MIT_License) license,
     npm install
     ```
 
-5. run the dev server using command:
+5. create the `.env` file the same level as this `README.MD` file and fill up the key-value pair(s) like specify in `example.env` file, e.g.:
+
+    ```.env
+    VITE_RAPIDAPI=SAKJDFAOKSDFJAadkfjaskdfnnAKJO323LIl
+    ```
+
+6. run the dev server using command:
 
     ```bash
     npm run dev

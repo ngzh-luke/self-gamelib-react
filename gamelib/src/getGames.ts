@@ -1,18 +1,31 @@
 import axios from "axios";
+import * as configsJs from "./configs";
 
-const BASE_URL = "https://www.freetogame.com/api/games";
-
-
+const BASE_URL = "https://free-to-play-games-database.p.rapidapi.com/api";
 
 export const getAllGames = async () => {
-    const response = await axios.get(`${BASE_URL}`).then((response) => {
-        console.log(response.data);
-    });
-    // const resData = response.json();
-    // return resData;
+  const options = {
+    method: "GET",
+    url: `${BASE_URL}/filter`,
+    params: {
+      tag: "3d.mmorpg.fantasy.pvp",
+      platform: "pc",
+    },
+    headers: {
+      "X-RapidAPI-Key": configsJs.apiKey,
+      "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
+    },
+  };
+
+  try {
+    const response = await axios.request(options);
+    // console.log(response.data);
     return response;
-}
-
-export const g = ()=>{
-
+  } catch (error) {
+    console.error(error);
+  }
+  // const resData = response.json();
+  // return resData;
 };
+
+export const g = () => {};
