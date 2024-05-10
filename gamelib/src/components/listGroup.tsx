@@ -3,10 +3,14 @@ import { MouseEvent, useState } from "react";
 interface ListGroupProps {
   items: Array<String>;
   heading: String;
+  onSelectedItem?: (item: String) => void;
 }
 
-export default function ListGroup() {
-  let items = ["THA", "CHN", "USA"];
+export default function ListGroup({
+  heading,
+  items,
+  onSelectedItem,
+}: ListGroupProps) {
   const [selectedIndex, selectedIndexUpdater] = useState(-1); // arr[0] = variable, arr[1] = updater func
   const handleClick = (event: MouseEvent, item: String, index: number) => {
     selectedIndexUpdater(index);
@@ -15,7 +19,7 @@ export default function ListGroup() {
 
   return (
     <>
-      <h2>List Group</h2>
+      <h2>{heading}</h2>
       {<br />}
       {
         items.length === 0 && (
