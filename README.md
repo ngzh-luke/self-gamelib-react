@@ -12,6 +12,10 @@ Personal Project: `GameLib` powered by [`React`](https://react.dev/) is a Game l
 
 This project applied [`MIT`](https://en.wikipedia.org/wiki/MIT_License) license, please refer to [`LICENSE`](LICENSE) for more information.
 
+## Changelog & Roadmap
+
+Please refer to the [`changelog.md`](changelog_roadmap.md) for project update history and feature list roadmap.
+
 ## Prerequisites
 
 - terminal
@@ -42,7 +46,7 @@ This project applied [`MIT`](https://en.wikipedia.org/wiki/MIT_License) license,
     npm install
     ```
 
-5. create the `.env` file the same level as this `README.MD` file and fill up the key-value pair(s) like specify in `example.env` file, e.g.:
+5. create the `.env` file in the [`gamelib`](gamelib) folder and fill up the key-value pair(s) like the following, or the format that specified in [`example.env`](gamelib/example.env) file, please note that you may obtained the key from <https://rapidapi.com>
 
     ```.env
     VITE_RAPIDAPI=SAKJDFAOKSDFJAadkfjaskdfnnAKJO323LIl
