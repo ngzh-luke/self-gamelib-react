@@ -7,6 +7,7 @@ Personal Project: `GameLib` powered by [`React`](https://react.dev/) is a Game l
 - Thanks to the [React Tutorial for Beginners](https://youtu.be/SqcY0GlETPk?si=opdBfZU9vDrOOxjJ) for getting started tutorial.
 - Thanks to the [React JS Full Course 2023 | Build an App and Master React in 1 Hour](https://youtu.be/b9eMGE7QtTk?si=KdRpbg9HH3j72oyF) for guiding the experiences to the real world project.
 - Thanks to the [React Tutorial for Beginners 2024 | Learn Reactjs 19 in 15 minutes](https://youtu.be/1z-E_KOC2L0?si=d-oK0YRN5Pk5a04E) for help clarify more fundamental stuffs.
+- <https://www.iconfinder.com> & <https://www.icons8.com>
 
 ## License
 
@@ -23,6 +24,8 @@ Please refer to the [`changelog.md`](changelog_roadmap.md) for project update hi
 - web browser
 
 ## Instructions
+
+0. the files in [src/components](/gamelib/src/components/) may not take any effects to the project.
 
 1. `clone`/`pull`/`download` the project with from __<https://github.com/ngzh-luke/self-gamelib-react>__ by run:
 

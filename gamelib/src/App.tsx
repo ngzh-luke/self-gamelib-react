@@ -5,7 +5,7 @@
 // import SWalert from "./components/swAlert";
 
 import { useEffect } from "react";
-import { getAllGames } from "./getGames";
+import * as getGames from "./getGames";
 
 // function App() {
 //   let countryList = ["THA", "CHN", "USA"];
@@ -30,16 +30,12 @@ import { getAllGames } from "./getGames";
 
 function App() {
   useEffect(() => {
-    console.log(getAllGames());
+    console.log(getGames.getAllGames());
   }, []);
   return (
     <>
       <h1>GameLib</h1>
-      {/* <iframe
-        src="https://csp-evaluator.withgoogle.com/"
-        width="90%"
-        height="510"
-      ></iframe> */}
+      {}
     </>
   );
 }
