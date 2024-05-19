@@ -1,5 +1,5 @@
 import { ReactNode, useState } from "react";
-import BSalert from "./bsAlert";
+import BSalert from "./old.bsAlert";
 
 interface WrapperProps {
   children: ReactNode;

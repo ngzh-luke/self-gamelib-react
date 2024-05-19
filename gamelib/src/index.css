@@ -1,51 +1,74 @@
+/* some parts adapted from https://gist.github.com/adrianhajdin/997a8cdf94234e889fa47be89a4759f1 */
+
+/* import font 'Prompt' from Google */
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+/* specify font 'AlimamaDongFangDaKai' */
+@font-face {
+  font-family: "AlimamaDongFangDaKai";
+  font-weight: 400;
+  src: url("assets/AlimamaDongFangDaKai-Regular.woff2") format("woff2");
+}
+
 .prompt-light {
-  font-family: "Prompt", sans-serif;
+  font-family: "Prompt", "DongFang", sans-serif, system-ui;
   font-weight: 300;
   font-style: normal;
 }
 
 .prompt-regular {
-  font-family: "Prompt", sans-serif;
+  font-family: "Prompt", "DongFang", sans-serif, system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
 .prompt-medium {
-  font-family: "Prompt", sans-serif;
+  font-family: "Prompt", "DongFang", sans-serif, system-ui;
   font-weight: 500;
   font-style: normal;
 }
 
 .prompt-bold {
-  font-family: "Prompt", sans-serif;
+  font-family: "Prompt", "DongFang", sans-serif, system-ui;
   font-weight: 700;
   font-style: normal;
 }
 
 .prompt-light-italic {
-  font-family: "Prompt", sans-serif;
+  font-family: "Prompt", "DongFang", sans-serif, system-ui;
   font-weight: 300;
   font-style: italic;
 }
 
 .prompt-regular-italic {
-  font-family: "Prompt", sans-serif;
+  font-family: "Prompt", "DongFang", sans-serif, system-ui;
   font-weight: 400;
   font-style: italic;
 }
 
 .prompt-medium-italic {
-  font-family: "Prompt", sans-serif;
+  font-family: "Prompt", "DongFang", sans-serif, system-ui;
   font-weight: 500;
   font-style: italic;
 }
 
 .prompt-bold-italic {
-  font-family: "Prompt", sans-serif;
+  font-family: "Prompt", "DongFang", sans-serif, system-ui;
   font-weight: 700;
   font-style: italic;
+}
+.alimamadongfangdakai {
+  font-family: "AlimamaDongFangDaKai", "Prompt", sans-serif, system-ui;
+  font-style: normal;
+}
+.alimamadongfangdakai-italic {
+  font-family: "AlimamaDongFangDaKai", "Prompt", sans-serif, system-ui;
+  font-style: italic;
+}
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -72,17 +95,102 @@ a:hover {
 }
 
 body {
-  font-family: "Prompt", sans-serif, system-ui;
-  margin: 0;
-  display: flex;
+  font-family: "Prompt", "DongFang", sans-serif, system-ui;
+  margin: 1;
+  padding: 1rem;
+  display: block;
   place-items: center;
+  align-items: baseline;
+  align-self: center;
+  width: 100vw;
   min-width: 320px;
   min-height: 100vh;
 }
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.search {
+  width: 70%;
+  margin: 1rem 0 2rem;
 
-h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.5rem;
+  border-radius: 3rem;
+  background: #a3a7af;
+  -webkit-box-shadow: 5px 5px 7px #a3a7af, -5px -5px 7px #5b5f61;
+  box-shadow: 5px 5px 7px #a3a7af, -5px -5px 7px #5b5f61;
+}
+.search button {
+  border-radius: 0.5rem;
+  margin-left: 15px;
+  color: #a1a1a1;
+  /* letter-spacing: 0.5px; */
+  font-size: 1.25rem;
+  cursor: pointer;
+  background: #5b5f61;
+  -webkit-box-shadow: 5px 5px 7px #a3a7af, -5px -5px 7px #5b5f61;
+  box-shadow: 5px 5px 7px #a3a7af, -5px -5px 7px #5b5f61;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-right: 1rem;
+  outline: none;
+  color: #a3a7af;
+  background: #5b5f61;
+}
+
+.search img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+h1.animate {
+  margin-top: 2vh;
   font-size: 3.2em;
   line-height: 1.1;
+  letter-spacing: 0.9px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(249, 211, 180, 1) 0%,
+    rgb(177, 104, 44) 50%,
+    rgba(249, 211, 180, 0) 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: gradient linear 5s alternate infinite;
+  background-clip: text;
+  width: fit-content;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+h1 {
+  margin-top: 2vh;
+  font-size: 3.2em;
+  line-height: 1.1;
+  letter-spacing: 0.9px;
+  width: fit-content;
 }
 
 button {

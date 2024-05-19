@@ -21,7 +21,7 @@ export const getGamesByTags = async (tag: string, platform: string) => {
   try {
     const response = await axios.request(options);
     // console.log(response.data);
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
   }
@@ -42,7 +42,7 @@ export const getGamesByPlatform = async (platform: string) => {
   try {
     const response = await axios.request(options);
     // console.log(response.data);
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
   }
@@ -65,7 +65,7 @@ export const getGamesByCategoryOrTag = async (category: string) => {
   try {
     const response = await axios.request(options);
     // console.log(response.data);
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
   }
@@ -94,7 +94,7 @@ export const getGamesByPlatformAndCategoryAndSorted = async (
   try {
     const response = await axios.request(options);
     // console.log(response.data);
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
   }
@@ -115,7 +115,7 @@ export const getGameDetailsByID = async (gameID: number) => {
   try {
     const response = await axios.request(options);
     // console.log(response.data);
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
   }
@@ -138,7 +138,7 @@ export const getSortedGames = async (sortBy: string) => {
   try {
     const response = await axios.request(options);
     // console.log(response.data);
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
   }

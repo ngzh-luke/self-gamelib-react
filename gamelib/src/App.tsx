@@ -1,42 +1,47 @@
-// import BSalertWrapper from "./components/bsAlertWrapper";
-// import BTN from "./components/btn";
-// import ListGroup from "./components/listGroup";
-// import Message from "./components/message";
-// import SWalert from "./components/swAlert";
-
 import { useEffect } from "react";
 import * as getGames from "./getGames";
+import searchIcon from "./assets/search.svg";
 
-// function App() {
-//   let countryList = ["THA", "CHN", "USA"];
-
-//   return (
-//     <>
-//       <BSalertWrapper>BS Alert</BSalertWrapper>
-//       {
-//         <BTN _className={"btn btn-primary"} _onClick={SWalert}>
-//           Trigger SWA2!
-//         </BTN>
-//       }
-//       <Message />
-//       <ListGroup
-//         heading={"Country list"}
-//         items={countryList}
-//         onSelectedItem={(item = "THA") => null}
-//       ></ListGroup>
-//     </>
-//   );
-// }
+function SearchBar() {
+  return (
+    <>
+      <form action="" method="get" className="search">
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Type something here to search"
+          value={undefined}
+          onChange={() => {}}
+          required
+        ></input>
+        <button type="submit">
+          <img src={searchIcon} />
+        </button>
+      </form>
+    </>
+  );
+}
 
 function App() {
   useEffect(() => {
-    console.log(getGames.getAllGames());
+    const data = getGames.getAllGames();
+    console.log(data);
   }, []);
   return (
-    <>
-      <h1>GameLib</h1>
+    <div id="title">
+      <h1 className="prompt-regular animate">GameLib</h1>
+      <h3
+        className="alidongfang"
+        style={{
+          marginRight: "1px",
+          marginLeft: "10px",
+        }}
+      >
+        by LukeCreated
+      </h3>
+      {SearchBar()}
       {}
-    </>
+    </div>
   );
 }
 
