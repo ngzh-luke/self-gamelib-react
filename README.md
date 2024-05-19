@@ -25,7 +25,7 @@ Please refer to the [`changelog.md`](changelog_roadmap.md) for project update hi
 
 ## Instructions
 
-0. the files in [src/components](/gamelib/src/components/) may not take any effects to the project.
+0. the files in [src/components](/gamelib/src/components/) that starts with `old.` may not take any effects to the project.
 
 1. `clone`/`pull`/`download` the project with from __<https://github.com/ngzh-luke/self-gamelib-react>__ by run:
 
