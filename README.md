@@ -13,6 +13,20 @@ Personal Project: `GameLib` powered by [`React`](https://react.dev/) is a Game l
 
 This project applied [`MIT`](https://en.wikipedia.org/wiki/MIT_License) license, please refer to [`LICENSE`](LICENSE) for more information.
 
+## Features & Dependencies
+
+### Main Features
+
+- Ability to fetch data from the APIs and display correctly
+- Ability to search through the fetched data and display the matching results
+
+### Direct Dependencies
+
+- React
+- MiniSearch
+- Axios
+- env-var
+
 ## Changelog & Roadmap
 
 Please refer to the [`changelog.md`](changelog_roadmap.md) for project update history and feature list roadmap.

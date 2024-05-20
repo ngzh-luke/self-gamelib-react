@@ -146,7 +146,6 @@ export const getSortedGames = async (sortBy: string) => {
 
 export const getAllGames = async function () {
   // Get all games!
-
   const options = {
     method: "GET",
     url: `${BASE_URL}/games`,
@@ -159,7 +158,7 @@ export const getAllGames = async function () {
   try {
     const response = await axios.request(options);
     // console.log(response.data);
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
   }

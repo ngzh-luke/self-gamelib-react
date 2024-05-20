@@ -17,4 +17,5 @@ You can see the expected feature in the future launches in [Roadmap section](#ro
 |       0       |     0.0.0     | finished the getting started tutorial |
 |      1st      |     0.0.1     |    project initialized  |
 |      2nd      |     0.0.2     | fetch all api draft with init styling |
-|      3nd      |     0.0.3     | search box implemented |
+|      3rd      |     0.0.3     | search box implemented |
+|      4th      |     0.0.4     | able to fetch all games and display |

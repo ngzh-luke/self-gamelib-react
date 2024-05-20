@@ -1,7 +1,7 @@
 {
   "name": "gamelib",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,6 +13,7 @@
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "env-var": "^7.4.2",
+    "minisearch": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sweetalert2": "^11.11.0",
