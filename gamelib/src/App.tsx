@@ -33,14 +33,18 @@ interface Game {
 // };
 
 function SearchBar() {
+  const [searchTerm, setSearchTerm] = useState("");
   return (
     <div className="search input-group">
       <input
         type="text"
         className=""
+        id="searchBoxInput"
         placeholder="Type something here to search"
-        value={undefined}
-        onChange={() => {}}
+        value={searchTerm}
+        onChange={(term) => {
+          setSearchTerm(term.target.value);
+        }}
       ></input>
       <img src={searchIcon} className="search-icon " alt="search-icon" />
     </div>
@@ -68,20 +72,22 @@ function App() {
   // );
 
   return (
-    <div id="title">
-      <h1 className="prompt-regular animate">GameLib</h1>
-      <h3
-        className="alimamadongfangdakai"
-        style={{
-          marginRight: "2px",
-          marginLeft: "8px",
-        }}
-      >
-        by LukeCreated
-      </h3>
-      {SearchBar()}
+    <>
+      <div id="title">
+        <h1 className="prompt-regular animate">GameLib</h1>
+        <h3
+          className="alimamadongfangdakai"
+          style={{
+            marginRight: "2px",
+            marginLeft: "8px",
+          }}
+        >
+          by LukeCreated
+        </h3>
+        {SearchBar()}{" "}
+      </div>
       <div className="cards">
-        {games?.length > 0 ? (
+        {games?.length > 0 && (
           <>
             {games.map((game) => (
               <GameCard
@@ -95,8 +101,11 @@ function App() {
               ></GameCard>
             ))}
           </>
-        ) : (
-          <>
+        )}
+      </div>
+      {games?.length <= 0 && (
+        <>
+          <div className="not-found">
             <br />
             <h2
               className="prompt-bold-italic"
@@ -106,10 +115,10 @@ function App() {
             >
               No games found!
             </h2>
-          </>
-        )}
-      </div>
-    </div>
+          </div>
+        </>
+      )}
+    </>
   );
 }
 
