@@ -5,12 +5,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from "./App";
-
-const router = createBrowserRouter(
-  createRoutesFromElements(<Route path="/" index element={<App />}></Route>)
-);
+// import * as GameDetails from "./pages/gameDetails";
 
 export const AppNavigator = () => {
+  const router = createBrowserRouter(
+    createRoutesFromElements(<Route path="/" index element={<App />}></Route>)
+  );
+
   return (
     <>
       <RouterProvider router={router}></RouterProvider>

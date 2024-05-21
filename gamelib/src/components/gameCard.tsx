@@ -1,5 +1,6 @@
 import openIcon from "../assets/open.svg";
 import noIMG from "../assets/noimg.svg";
+import Cookies from "universal-cookie";
 
 interface GameCardProps {
   thumbnail: string;
@@ -13,7 +14,14 @@ interface GameCardProps {
 export default function GameCard(game: GameCardProps) {
   return (
     <>
-      <div className="card" onClick={() => {}}>
+      <div
+        className="card"
+        onClick={() => {
+          const cookies = new Cookies(null, { path: "/" });
+          cookies.set("selected", game.id);
+          console.log("you have selected game ID:", game.id);
+        }}
+      >
         <div className="card-img">
           <img
             src={game.thumbnail == "" ? noIMG : game.thumbnail}

@@ -20,3 +20,4 @@ You can see the expected feature in the future launches in [Roadmap section](#ro
 |      3rd      |     0.0.3     | search box implemented |
 |      4th      |     0.0.4     | able to fetch all games and display them |
 |      5th      |     0.0.5     | display optimized + show details init |
+|      6th      |     0.0.6     | added cookies system + show details design init |

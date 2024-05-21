@@ -20,12 +20,16 @@ This project applied [`MIT`](https://en.wikipedia.org/wiki/MIT_License) license,
 - Ability to fetch data from the APIs and display correctly
 - Ability to search through the fetched data and display the matching results
 
-### Direct Dependencies
+### Tools & Direct Dependencies
 
-- React
-- MiniSearch
-- Axios
-- env-var
+- [TypeScript](https://www.typescriptlang.org/)
+- [HTML&CSS]
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev)
+- [MiniSearch](https://www.npmjs.com/package/minisearch)
+- [Axios](https://www.npmjs.com/package/axios)
+- [env-var](https://www.npmjs.com/package/env-var)
+- [universal-cookie](https://www.npmjs.com/package/universal-cookie)
 
 ## Changelog & Roadmap
 
