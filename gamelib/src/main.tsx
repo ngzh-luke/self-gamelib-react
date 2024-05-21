@@ -5,11 +5,13 @@ import "./index.css";
 import Footer from "./components/footer.tsx";
 import ToTopBTN from "./components/toTopBTN.tsx";
 import { AppNavigator } from "./AppNavigator.tsx";
+import CookiesBanner from "./components/cookiesBanner.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <AppNavigator></AppNavigator>
     <Footer></Footer>
+    <CookiesBanner></CookiesBanner>
     <ToTopBTN></ToTopBTN>
   </React.StrictMode>
 );

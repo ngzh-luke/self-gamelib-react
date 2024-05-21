@@ -25,7 +25,7 @@ export interface GameDetailsProps {
   }[];
 }
 
-export const GameDetails = (game: GameDetailsProps) => {
+const GameDetails = (game: GameDetailsProps) => {
   return (
     <>
       <h1>{game.title}</h1>
@@ -33,3 +33,4 @@ export const GameDetails = (game: GameDetailsProps) => {
     </>
   );
 };
+export default GameDetails;

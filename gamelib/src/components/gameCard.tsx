@@ -20,6 +20,7 @@ export default function GameCard(game: GameCardProps) {
           const cookies = new Cookies(null, { path: "/" });
           cookies.set("selected", game.id);
           console.log("you have selected game ID:", game.id);
+          window.location.assign(`/details/id=${cookies.get("selected")}`);
         }}
       >
         <div className="card-img">

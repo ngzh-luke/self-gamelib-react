@@ -33,7 +33,7 @@ This project applied [`MIT`](https://en.wikipedia.org/wiki/MIT_License) license,
 
 ## Changelog & Roadmap
 
-Please refer to the [`changelog.md`](changelog_roadmap.md) for project update history and feature list roadmap.
+Please refer to the [`changelog_roadmap.md`](changelog_roadmap.md) for project update history and feature list roadmap.
 
 ## Prerequisites
 

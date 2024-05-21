@@ -309,6 +309,29 @@ h1 {
   transform: translateY(-4px);
 }
 
+.cookies-banner {
+  box-shadow: -30px 30px 10px -20px rgba(51, 19, 255, 0.1);
+  transition: 5s ease-in;
+  border: #9ca8c5;
+  border-style: dashed;
+  box-sizing: border-box;
+  border-radius: 10%;
+  background-color: aliceblue;
+  position: fixed;
+  bottom: 1rem;
+  left: 0.8rem;
+  padding: 1rem;
+  display: inline-flex;
+}
+.cookies-banner-content {
+  display: block;
+  width: auto;
+  max-width: 300px;
+}
+.cookies-banner-content button {
+  background-color: #047b06;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
