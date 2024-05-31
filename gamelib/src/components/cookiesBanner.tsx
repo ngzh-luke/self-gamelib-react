@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Cookies from "universal-cookie";
 
 const CookiesBanner: React.FC = () => {
   const [showBanner, setShowBanner] = useState(true);
   const cookies = new Cookies(null, { path: "/" });
-  cookies.set("acknowledge", true);
-
+  useEffect(() => {
+    if (cookies.get("acknowledge") == true) {
+      setShowBanner(false);
+      console.log("acknowledged");
+    } else {
+      setShowBanner(true);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const handleAcknowledge = () => {
+    cookies.set("acknowledge", true);
     setShowBanner(false);
   };
 

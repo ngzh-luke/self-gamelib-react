@@ -9,7 +9,7 @@ export default function Footer() {
         }}
       >
         <p>
-          GameLib | Version: 0.0.7 | Built with{" "}
+          GameLib | Version: 0.0.8 | Built with{" "}
           <a href="http://react.dev" target="_blank" rel="noopener noreferrer">
             React
           </a>{" "}

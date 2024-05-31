@@ -27,10 +27,10 @@ export interface GameDetailsProps {
 
 const GameDetails = (game: GameDetailsProps) => {
   return (
-    <>
+    <div className="games-details">
       <h1>{game.title}</h1>
       <h3>{game.id}</h3>
-    </>
+    </div>
   );
 };
 export default GameDetails;
